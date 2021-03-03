@@ -1,0 +1,109 @@
+/*---------------------------
+            Header 
+--------------------------- */
+
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e7e7e7;
+    flex-wrap: wrap;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+    margin:20px;
+    border-radius: 60px;
+  
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.64);
+    -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,0.64);
+    -moz-box-shadow: 0 0 16px 0 rgba(0,0,0,0.64);
+}
+
+header .welcome-message{
+    font-weight: bold;
+}
+
+header .logout-btn{
+    color: #3d3d3d;
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius:5px;
+}
+
+header .logout-btn:hover{
+    background-color: black;
+    color:white;
+    border: 1px solid black;
+}
+
+
+/*---------------------------
+    Section Génération PDF 
+--------------------------- */
+
+/* Formulaire */
+form div.form-group{
+    display:flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+
+form div.form-group label{
+    padding-bottom:15px;
+}
+
+form div.form-group input{
+    border: 1.5px solid rgb(122, 122, 122);
+    min-height:30px;
+    font-size: 16px;
+    border-radius:5px;
+    padding:5px
+}
+
+form div.form-group textarea{
+    border: 1.5px solid rgb(122, 122, 122);
+    min-height:50px;
+    height:200px;
+    font-size: 14px;
+    border-radius:5px;
+    resize: none;
+    padding:5px;
+}
+
+form button[type='submit']{
+    padding: 15px 20px;
+    max-width: 200px;
+    background-color: #2ecc71;
+    color:white;
+    font-weight:400;
+    border: none;
+    border-radius: 5px;
+    font-size:16px;
+}
+
+form button[type='submit']:hover{
+    background-color: white;
+    color:#2ecc71;
+    border: 2px solid #2ecc71;
+    cursor:pointer;
+}
+
+/* Messages d'erreur */
+form span.error-msg {
+    padding-top: 5px;
+    color:red;
+    font-size: 12px;
+    display:none;
+}
+
+form div.form-group.input-error input, form div.form-group.input-error textarea{
+    border-color: red;
+}
+
+form div.form-group.input-error span.error-msg{
+    display:inline;
+}

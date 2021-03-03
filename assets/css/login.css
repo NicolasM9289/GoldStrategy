@@ -1,0 +1,89 @@
+/*---------------------------
+    Formulaire de connexion 
+--------------------------- */
+#form-content{
+    flex-basis: 400px;
+    margin: 20px 50px;
+}
+
+
+/* Logo & titre */
+#form-content div.logo-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-content div.logo-container img{
+    max-width: 140px;
+    max-height: 165px; 
+}
+
+#form-content div.logo-container h1 {
+    color: #a47e24;
+    font-family: 'eb-garamond', Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size:32px;
+}
+
+/* Champs */
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+form div.form-group{
+    display:flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+form div.form-group input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1.5px solid rgb(122, 122, 122);
+    min-height:30px;
+    font-size: 16px;
+    color:#AF9453;
+    margin-top:5px;
+}
+
+form div.form-group input:focus{
+    border-color: #AF9453;
+}
+
+/* Messages d'erreur */
+form span.error-msg {
+    padding-top: 5px;
+    color:red;
+    font-size: 12px;
+    display:none;
+}
+
+form div.form-group.input-error input{
+    border-color: red;
+}
+
+form div.form-group.input-error span.error-msg{
+    display:inline;
+}
+
+/* Bouton de validation */
+form button[type='submit']{
+    padding: 15px 50px;
+    max-width: 200px;
+    align-self:center;
+    background-color: #AF9453;
+    border: 2px solid #AF9453;
+    color:white;
+    font-weight:400;
+    border-radius: 5px;
+    font-size:16px;
+}
+
+form button[type='submit']:hover{
+    background-color: white;
+    color:#AF9453;
+    cursor: pointer;
+}

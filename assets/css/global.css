@@ -1,0 +1,43 @@
+/*---------------------------
+            Fonts
+--------------------------- */
+@font-face {
+    font-family: "eb-garamond";
+    src: url("../fonts/eb-garamond.otf");
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto.ttf");
+}
+
+/*---------------------------
+        Styles globaux 
+--------------------------- */
+*{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height:100%;
+    margin:0;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+    min-height:100%;
+}
+
+section{
+    padding:20px 50px;
+    max-width: 500px;
+}
+
+section hr{
+    margin: 0;
+    margin-bottom: 40px;
+}
