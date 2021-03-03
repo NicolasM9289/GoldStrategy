@@ -4,8 +4,8 @@
      * Pas de base de données, le client cherchant quelque chose de simple :)
      */
      
-    $email = "eschor30@gmail.com";
-    $pass = "1996";
+    $email = "emailexemple@exemple.com";
+    $pass = "exemple";
  
 
     if( isset($_POST['email']) && isset($_POST['pass']) ){
